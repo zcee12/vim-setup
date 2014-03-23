@@ -1,2 +1,7 @@
+echo "Pulling changes from git"
 git pull
-cp vimrc ~/.vimrc
+
+echo "Copying latest vimrc to ~/.vimrc"
+cp -v vimrc ${HOME}/.vimrc
+echo "Done"
+

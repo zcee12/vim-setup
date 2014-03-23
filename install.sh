@@ -1,9 +1,9 @@
 if [ -d "~/.vim" ]; then
-    mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-        curl -Sso ~/.vim/autoload/pathogen.vim \
+    mkdir -p ${HOME}/.vim/autoload ${HOME}/.vim/bundle; \
+        curl -Sso ${HOME}/.vim/autoload/pathogen.vim \
             https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 else
-    mkdir ~/.vim
+    mkdir ${HOME}/.vim
 fi
 
-cp vimrc ~/.vimrc
+cp vimrc ${HOME}/.vimrc
