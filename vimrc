@@ -1,5 +1,22 @@
-" Pull in vim bundles
-execute pathogen#infect()
+" Vundle setup
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Plugin 'gmarik/vundle'
+
+" Specify Plugins
+Plugin 'nvie/vim-flake8'
+Plugin 'mhinz/vim-tmuxify'
+Plugin 'ervandew/supertab'
+
+filetype plugin indent on
+
+" Plugin Customisations
+autocmd BufWritePost *.py call Flake8() "Run flake8 on python file close
+
+" Set line numbers on
+set nu
 
 " Set syntax highlighting
 syntax enable
