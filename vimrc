@@ -11,11 +11,9 @@ Plugin 'mhinz/vim-tmuxify'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 
-filetype plugin indent on
-
 " Plugin Customisations
 ""Run flake8 on python file close
-autocmd BufWritePost *.py call Flake8() 
+"autocmd BufWritePost *.py call Flake8() 
 " Open nerdtree with ctrl+n
 map <C-n> :NERDTreeToggle<CR> 
 
@@ -23,8 +21,14 @@ map <C-n> :NERDTreeToggle<CR>
 " Set line numbers on
 set nu
 
-" Set syntax highlighting
+" EightyCharacterMarker
+match ErrorMsg '\%>80v.\+'
+
+" Enable syntas
 syntax enable
+
+" Show whitespace
+set listchars=tab:>-,trail:±
 
 " Enable filetype plugins
 filetype plugin indent on
