@@ -11,6 +11,8 @@ Plugin 'mhinz/vim-tmuxify'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 
+filetype plugin indent on
+
 " Plugin Customisations
 ""Run flake8 on python file close
 "autocmd BufWritePost *.py call Flake8() 
@@ -21,14 +23,8 @@ map <C-n> :NERDTreeToggle<CR>
 " Set line numbers on
 set nu
 
-" EightyCharacterMarker
-match ErrorMsg '\%>80v.\+'
-
-" Enable syntas
+" Set syntax highlighting
 syntax enable
-
-" Show whitespace
-set listchars=tab:>-,trail:±
 
 " Enable filetype plugins
 filetype plugin indent on
@@ -58,5 +54,3 @@ set smartcase
 " Return to last edit position when opening files (You want this!)
 " autocmd BufReadPost *
       \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
