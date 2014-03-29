@@ -6,7 +6,7 @@ fi
 
 echo "Pulling down latest pathogen"
 rm -rf ${HOME}/.vim/bundle/vundle
-git clone git@github.com:gmarik/Vundle.vim.git ${HOME}/.vim/vundle
+git clone git@github.com:gmarik/Vundle.vim.git ${HOME}/.vim/bundle/vundle
 
 echo "Pulling latest custom changes from git"
 git pull
