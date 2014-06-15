@@ -9,15 +9,12 @@ Plugin 'gmarik/vundle'
 Plugin 'nvie/vim-flake8'
 Plugin 'mhinz/vim-tmuxify'
 Plugin 'ervandew/supertab'
-Plugin 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
 " Plugin Customisations
 ""Run flake8 on python file close
 "autocmd BufWritePost *.py call Flake8() 
-" Open nerdtree with ctrl+n
-map <C-n> :NERDTreeToggle<CR> 
 
 " My Settings
 " Set line numbers on
