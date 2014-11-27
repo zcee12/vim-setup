@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 " Vundle setup
 set nocompatible
 filetype off
@@ -58,4 +56,3 @@ set smartcase
 " Return to last edit position when opening files (You want this!)
 " autocmd BufReadPost *
       \ if line("'\"") > 0 && line("'\"") <= line("$") |
->>>>>>> 0c02636aeeeeb456cd7784e8ab1c0a1ec8089bdc
