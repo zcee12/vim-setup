@@ -9,7 +9,6 @@ Plugin 'gmarik/vundle'
 Plugin 'nvie/vim-flake8'
 Plugin 'mhinz/vim-tmuxify'
 Plugin 'ervandew/supertab'
-Plugin 'tpope/vim-cucumber'
 
 filetype plugin indent on
 
@@ -37,6 +36,9 @@ set autoindent "Auto indent"
 set smartindent "Smart indent"
 set wrap "Wrap lines"
 
+" Backspace
+set backspace=indent,eol,start
+
 " Highlight search results "
 set hlsearch
 
@@ -45,10 +47,6 @@ set showmatch
 
 " Ignore case when searching
 set ignorecase
-
-" Gherkin highlighting and quick open"
-au Bufread,BufNewFile *.feature set filetype=gherkin
-au! Syntax gherkin source ~/.vim/cucumber.vim
 
 " When searching try to be smart about cases
 set smartcase  
