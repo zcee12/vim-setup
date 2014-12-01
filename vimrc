@@ -47,6 +47,9 @@ set wrap "Wrap lines"
 
 " Set Line space
 set linespace=6
+"
+" Backspace
+set backspace=indent,eol,start
 
 " Highlight search results "
 set hlsearch
