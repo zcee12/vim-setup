@@ -12,6 +12,7 @@ Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-cucumber'
 Plugin 'elzr/vim-json'
 Plugin 'scrooloose/nerdtree'
+Plugin 'mileszs/ack'
 
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
