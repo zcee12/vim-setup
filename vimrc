@@ -11,6 +11,10 @@ Plugin 'mhinz/vim-tmuxify'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-cucumber'
 Plugin 'elzr/vim-json'
+Plugin 'scrooloose/nerdtree'
+
+" Nerdtree
+map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
 
