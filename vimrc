@@ -5,14 +5,14 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Plugin 'gmarik/vundle'
 
-" Specify Plugins
+" Specify Plugins and Bundles
 Plugin 'nvie/vim-flake8'
 Plugin 'mhinz/vim-tmuxify'
-Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-cucumber'
 Plugin 'elzr/vim-json'
 Plugin 'scrooloose/nerdtree'
-Plugin 'mileszs/ack'
+
+Bundle 'mileszs/ack.vim'
 
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -32,7 +32,7 @@ syntax enable
 
 " Gherkin highlighting and quick open"
 au Bufread,BufNewFile *.feature set filetype=gherkin
-au! Syntax gherkin source ~/.vim/cucumber.vim
+au! Syntax gherkin source ~/.im/cucumber.vim
 
 " Enable filetype plugins
 filetype plugin indent on
