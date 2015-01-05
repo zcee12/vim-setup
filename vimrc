@@ -3,7 +3,6 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Plugin 'gmarik/vundle'
 
 " Specify Plugins and Bundles
 Plugin 'nvie/vim-flake8'
@@ -19,6 +18,11 @@ Bundle 'altercation/vim-colors-solarized'
 map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
+
+syntax on
+set background=dark
+let g:solarized_termtrans = 1
+colorscheme solarized 
 
 " Plugin Customisations
 ""Run flake8 on python file close
