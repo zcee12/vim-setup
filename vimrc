@@ -13,6 +13,7 @@ Plugin 'elzr/vim-json'
 Plugin 'scrooloose/nerdtree'
 
 Bundle 'mileszs/ack.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
