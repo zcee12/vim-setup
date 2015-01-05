@@ -19,11 +19,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
 
-syntax on
-set background=dark
-let g:solarized_termtrans = 1
-colorscheme solarized 
-
 " Plugin Customisations
 ""Run flake8 on python file close
 autocmd BufWritePost *.py call Flake8() 
