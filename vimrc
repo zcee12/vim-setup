@@ -6,7 +6,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
 " Specify Plugins and Bundles
 Plugin 'gmarik/Vundle.vim'
 
@@ -18,6 +17,8 @@ Plugin 'scrooloose/nerdtree'
 
 Bundle 'mileszs/ack.vim'
 Bundle 'altercation/vim-colors-solarized'
+
+call vundle#end()
 
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
