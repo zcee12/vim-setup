@@ -1,10 +1,15 @@
 " Vundle setup
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
 
 " Specify Plugins and Bundles
+Plugin 'gmarik/Vundle.vim'
+
 Plugin 'nvie/vim-flake8'
 Plugin 'mhinz/vim-tmuxify'
 Plugin 'tpope/vim-cucumber'
