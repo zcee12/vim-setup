@@ -1,14 +1,10 @@
 " Vundle setup
 set nocompatible
 filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 " Specify Plugins and Bundles
-Plugin 'gmarik/Vundle.vim'
-
 Plugin 'nvie/vim-flake8'
 Plugin 'mhinz/vim-tmuxify'
 Plugin 'tpope/vim-cucumber'
@@ -18,18 +14,15 @@ Plugin 'scrooloose/nerdtree'
 Bundle 'mileszs/ack.vim'
 Bundle 'altercation/vim-colors-solarized'
 
-call vundle#end()
-
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
 
-""" Colours """
 syntax on
 set background=dark
 let g:solarized_termtrans = 1
-colorscheme solarized
+colorscheme solarized 
 
 " Plugin Customisations
 ""Run flake8 on python file close
